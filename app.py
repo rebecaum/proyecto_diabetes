@@ -50,14 +50,24 @@ nombre = st.sidebar.text_input("Nombre del paciente (opcional)")
 profesional = st.sidebar.text_input("Profesional/Centro (opcional)")
 email = st.sidebar.text_input("Correo electrónico del profesional (obligatorio para guardar)")
 
-insulina = st.sidebar.number_input("Insulina (uU/mL)", 0.0, 900.0, 30.5)
-pedigri = st.sidebar.number_input("Pedigrí de diabetes (DPF)", 0.0, 2.5, 0.37)
-edad = st.sidebar.number_input("Edad", 21, 100, 29)
-embarazos = st.sidebar.number_input("Nº de embarazos", 0, 20, 3)
-glucosa = st.sidebar.number_input("Glucosa (mg/dL)", 0, 250, 117)
-presion = st.sidebar.number_input("Presión arterial (mm Hg)", 0, 160, 72)
-piel = st.sidebar.number_input("Grosor del pliegue cutáneo (mm)", 0, 100, 23)
-imc = st.sidebar.number_input("IMC (kg/m²)", 10.0, 70.0, 32.0)
+insulina = st.sidebar.number_input("Insulina (uU/mL)", 0.0, 900.0, 30.5,
+    help="Nivel de insulina en sangre. Valores altos pueden indicar resistencia a la insulina.")
+pedigri = st.sidebar.number_input("Pedigrí de diabetes (DPF)", 0.0, 2.5, 0.37,
+    help="Índice de predisposición genética. Cuanto mayor, mayor riesgo.")
+edad = st.sidebar.number_input("Edad", 21, 100, 29,
+    help="Edad del paciente. El riesgo aumenta con la edad.")
+embarazos = st.sidebar.number_input("Nº de embarazos", 0, 20, 3,
+    help="Solo mujeres. Puede estar asociado al riesgo de diabetes.")
+glucosa = st.sidebar.number_input("Glucosa (mg/dL)", 0, 250, 117,
+    help="Glucosa en ayunas. >125 puede indicar diabetes.")
+presion = st.sidebar.number_input("Presión arterial (mm Hg)", 0, 160, 72,
+    help="Presión diastólica. Relacionada con salud metabólica.")
+piel = st.sidebar.number_input("Grosor del pliegue cutáneo (mm)", 0, 100, 23,
+    help="Tejido subcutáneo. Relacionado con grasa corporal.")
+imc = st.sidebar.number_input("IMC (kg/m²)", 10.0, 70.0, 32.0,
+    help="Índice de Masa Corporal. >30 indica obesidad.")
+
+st.markdown("Completa los datos y pulsa el botón para obtener el resultado.")
 
 # === BOTÓN DE EVALUACIÓN ===
 if st.button("Evaluar riesgo de diabetes"):
