@@ -1,0 +1,6 @@
+Comparativa de métricas de modelos optimizados (punto 15.3)
+
+                              Modelo  Accuracy  Precision   Recall  F1-score  ROC-AUC
+LogisticRegression Optuna (IMC ALTO)  0.698925   0.681818 0.681818  0.681818 0.763915
+           XGBoost Optuna (IMC BAJO)  0.836066   0.500000 0.700000  0.583333 0.843137
+     SVC Umbral 0.35 (sin segmentar)  0.694805   0.542169 0.833333  0.656934 0.808148

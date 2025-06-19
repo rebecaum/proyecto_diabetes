@@ -1,0 +1,9 @@
+Archivo,Descripción,Carpeta
+X_train.csv,Conjunto de entrenamiento original (sin modificaciones),datos_procesados/original
+X_test.csv,Conjunto de test original (sin modificaciones),datos_procesados/original
+y_train.csv,Variable objetivo de entrenamiento,datos_procesados/original
+y_test.csv,Variable objetivo de test,datos_procesados/original
+X_train_procesado.csv,Conjunto de entrenamiento con ceros no fisiológicos reemplazados por NaN,datos_procesados/imputado
+X_train_limpio.csv,Conjunto de entrenamiento tras tratamiento de outliers (sin imputar nulos),datos_procesados/limpieza
+X_train_transformado.csv,Conjunto de entrenamiento transformado con PowerTransformer (antes de imputación),datos_procesados/escalado
+X_train_final.csv,Conjunto de entrenamiento definitivo: transformado y con nulos imputados (versión final),datos_procesados/final

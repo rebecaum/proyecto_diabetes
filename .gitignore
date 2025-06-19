@@ -1,0 +1,26 @@
+# Archivos y carpetas de entorno virtual
+env/
+.venv/
+
+# Archivos de compilación de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos del sistema
+.DS_Store
+
+# Archivos de checkpoints de Jupyter
+.ipynb_checkpoints/
+
+# Archivos de logs temporales
+*.log
+
+# Otros archivos que no deberían subirse
+*.zip
+
+# (Opcional) 
+# *.csv
+# *.xlsx
+
