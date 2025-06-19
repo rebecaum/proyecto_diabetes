@@ -42,6 +42,7 @@ pipeline, modelo = cargar_modelos()
 # === INTERFAZ PRINCIPAL ===
 st.title("Aplicación de Predicción de Diabetes")
 st.markdown("Introduce los datos clínicos del paciente para estimar el riesgo de diabetes y generar un informe.")
+st.info("👉 Para comenzar, abre la barra lateral (icono ▸ arriba a la izquierda) y completa los datos del paciente.")
 
 # === FORMULARIO CLÍNICO ===
 st.sidebar.header("Datos del paciente")
