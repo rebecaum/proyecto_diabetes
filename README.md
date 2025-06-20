@@ -1,3 +1,6 @@
+## 🔗 Aplicación desplegada en Streamlit:
+https://proyectodiabetes-f5gzcuzggnykhmrbp2vjja.streamlit.app/
+
 # 🩺 Proyecto de Predicción de Diabetes
 
 Este proyecto de Machine Learning tiene como objetivo predecir el riesgo de diabetes tipo 2 a partir de variables clínicas. Se han desarrollado múltiples modelos aplicando distintas estrategias de mejora como balanceo de clases con SMOTE, ajuste de umbral de decisión, segmentación por riesgo clínico (IMC), y optimización de hiperparámetros con Optuna. La solución final incluye una app en Streamlit lista para ser desplegada.
