@@ -118,10 +118,10 @@ proyecto-diabetes/
 │   ├── data_preprocessing.py
 │   └── model_utils.py
 
-
+```
 ---
 
-## 🚀 Uso de la aplicación web
+### 🚀 Uso de la aplicación web
 
 La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes de forma interactiva:
 
