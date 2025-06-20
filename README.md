@@ -1,15 +1,18 @@
-# Proyecto de Predicción de Diabetes Tipo 2 en Mujeres Pima
+# **Proyecto de Predicción de Diabetes Tipo 2 en Mujeres Pima**
 
 Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de diabetes tipo 2** a partir de variables clínicas recogidas en mujeres de la comunidad indígena Pima. Se ha desarrollado un flujo de trabajo completo, desde la exploración y preprocesamiento de datos hasta la evaluación de múltiples modelos, su optimización y la implementación final en una app de **Streamlit**
 
 ---
 ## Enlaces del proyecto
 
+- Notebook Proyecto de Predicción de Diabetes: [notebooks/Proyecto_Predicción_de_Diabetes.ipynb](notebooks/Proyecto_Predicción_de_Diabetes.ipynb)
+
 - Repositorio en GitHub_ https://github.com/rebecaum/proyecto_diabetes
 
-- Aplicación en Streamlit_ https://rebecaum-proyecto-diabetes-app.streamlit.app/
-
+- Aplicación desplegada en Streamlit: https://proyectodiabetes-f5gzcuzggnykhmrbp2vjja.streamlit.app/
+ 
 > ⚠ Nota: Los correos de profesionales y líder deben ser configurados por el administrador. Los que figuran en la app son ejemplos para pruebas.
+
 ---
 ## Contexto del problema
 
@@ -99,7 +102,7 @@ Se evaluaron tres modelos clínicamente relevantes:
   - SMOTE PARCIAL  
   - Optimizado con Optuna
 
-- **SVC (Support Vector Classifier** (modelo final seleccionado)  
+- **SVC (Support Vector Classifier)** (modelo final seleccionado)  
   - Dataset completo, NO segmentado  
   - SMOTE aplicado a todo el conjunto  
   - Ajuste de umbral a 0.35  
@@ -195,14 +198,12 @@ proyecto-diabetes/
 │   ├── data_preprocessing.py
 │   └── model_utils.py
 
-
 ---
-## 🚀 Instrucciones de uso local
+## Instrucciones de uso local
 1. Clona el repositorio:
 	git clone https://github.com/rebecaum/proyecto_diabetes.git
 2. Instala las dependencias:
 	pip install -r requirements.txt
-
 3. Ejecuta la aplicación:
 	streamlit run app.py
 
@@ -213,7 +214,6 @@ proyecto-diabetes/
 	https://rebecaum-proyecto-diabetes-app.streamlit.app/
 
 2. Uso de la aplicación web
-
 La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes de forma interactiva:
 	- Accede al enlace público (desplegado en Streamlit Cloud).
 	- Abre la **barra lateral izquierda** haciendo clic en el icono `▸` si no está visible.
