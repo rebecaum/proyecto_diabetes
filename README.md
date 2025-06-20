@@ -197,6 +197,7 @@ proyecto-diabetes/
 │   ├── __init__.py
 │   ├── data_preprocessing.py
 │   └── model_utils.py
+```
 
 ---
 ## Instrucciones de uso local
