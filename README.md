@@ -116,5 +116,24 @@ proyecto-diabetes/
 │   └── model_utils.py
 
 
+---
+
+## 🚀 Uso de la aplicación web
+
+La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes de forma interactiva:
+
+1. Accede al enlace público (desplegado en Streamlit Cloud).
+2. Abre la **barra lateral izquierda** haciendo clic en el icono `▸` si no está visible.
+3. Introduce los datos clínicos del paciente (pueden ser anónimos).
+4. Pulsa **Evaluar riesgo de diabetes**.
+5. Obtendrás:
+   - Resultado inmediato del modelo.
+   - Informe PDF descargable.
+   - Registro automático en CSV (si se introduce correo profesional).
+6. El profesional puede consultar sus propios registros.
+7. El líder, al introducir su correo, puede descargar el acumulado global.
+
+> El sistema permite un uso clínico orientado a la toma de decisiones y la mejora de comprensión del riesgo de diabetes.
+
 
 
