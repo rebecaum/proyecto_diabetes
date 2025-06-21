@@ -231,6 +231,22 @@ La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes d
 
 > El sistema permite un uso clínico orientado a la toma de decisiones y la mejora de comprensión del riesgo de diabetes.
 
+### Nota importante sobre los roles
+
+Esta aplicación permite simular dos tipos de usuarios:
+
+- **Profesional de la salud**: puede introducir los datos de pacientes y consultar sus propios registros.
+- **Líder clínico**: puede visualizar los datos agregados de todos los profesionales.
+
+Para activar las funcionalidades asociadas a cada rol, es necesario introducir un correo electrónico válido.
+
+**Correos de ejemplo disponibles para pruebas**:
+
+- Profesional: `profesional@dominio.com`
+- Líder: `lider@dominio.com`
+
+⚠️ Estos correos pueden modificarse en el archivo `app.py` si deseas adaptarlos a un entorno real.
+
 ---
  Autora
 
