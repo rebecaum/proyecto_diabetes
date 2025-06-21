@@ -5,7 +5,7 @@ Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de di
 ---
 ## Enlaces del proyecto
 
-- Notebook Proyecto de Predicción de Diabetes: [notebooks/Proyecto_Predicción_de_Diabetes.ipynb](notebooks/Proyecto_Predicción_de_Diabetes.ipynb)
+- Cuaderno Proyecto de predicción de Diabetes: [notebooks/Proyecto_Prediccion_de_Diabetes.ipynb](notebooks/Proyecto_Prediccion_de_Diabetes.ipynb)
 
 - Repositorio en GitHub_ https://github.com/rebecaum/proyecto_diabetes
 
@@ -166,7 +166,7 @@ proyecto-diabetes/
 ├── .gitignore
 │
 ├── notebooks/
-│   └── Proyecto_Prediccion_Diabetes.ipynb  ← Análisis completo
+│   └── Proyecto_Prediccion_Diabetes.ipynb  ← Notebook principal (versión final) 
 │
 ├── data/
 │   ├── raw/
