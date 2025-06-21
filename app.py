@@ -51,6 +51,14 @@ nombre = st.sidebar.text_input("Nombre del paciente (opcional)")
 profesional = st.sidebar.text_input("Profesional/Centro (opcional)")
 email = st.sidebar.text_input("Correo electrónico del profesional (obligatorio para guardar)")
 
+st.sidebar.markdown("---")
+st.sidebar.markdown("### Correos de ejemplo para probar la app")
+st.sidebar.markdown("- Líder: `lider@dominio.com`")
+st.sidebar.markdown("- Profesional: `ana@centro1.com`, `david@centro2.org`, `maria@clinica3.es`")
+st.sidebar.info("Puedes copiar y pegar uno de estos correos en los campos correspondientes para acceder como ese rol.")
+st.sidebar.markdown("---")
+
+
 insulina = st.sidebar.number_input("Insulina (uU/mL)", 0.0, 900.0, 30.5,
     help="Nivel de insulina en sangre. Valores altos pueden indicar resistencia a la insulina.")
 pedigri = st.sidebar.number_input("Pedigrí de diabetes (DPF)", 0.0, 2.5, 0.37,

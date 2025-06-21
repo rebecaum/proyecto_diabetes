@@ -5,7 +5,7 @@ Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de di
 ---
 ## Enlaces del proyecto
 
-- Cuaderno Proyecto de predicción de Diabetes: Cuaderno del proyecto (.ipynb): [`Proyecto_Prediccion_de_Diabetes.ipynb`](notebook/Proyecto_Prediccion_de_Diabetes.ipynb)
+- Cuaderno Proyecto de predicción de Diabetes: Cuaderno del proyecto (.ipynb): [Proyecto_Prediccion_de_Diabetes.ipyn`](notebook/Proyecto_Prediccion_de_Diabetes.ipynb)
 
 - Versión HTML del cuaderno: [Proyecto_Prediccion_de_Diabetes.html](notebook/Proyecto_Prediccion_de_Diabetes.html)
 
