@@ -51,12 +51,16 @@ nombre = st.sidebar.text_input("Nombre del paciente (opcional)")
 profesional = st.sidebar.text_input("Profesional/Centro (opcional)")
 email = st.sidebar.text_input("Correo electrónico del profesional (obligatorio para guardar)")
 
-st.sidebar.markdown("---")
-st.sidebar.markdown("### Correos de ejemplo para probar la app")
-st.sidebar.markdown("- Líder: `lider@dominio.com`")
-st.sidebar.markdown("- Profesional: `ana@centro1.com`, `david@centro2.org`, `maria@clinica3.es`")
-st.sidebar.info("Puedes copiar y pegar uno de estos correos en los campos correspondientes para acceder como ese rol.")
-st.sidebar.markdown("---")
+st.sidebar.write("---")
+st.sidebar.subheader(" Correos de ejemplo para probar la app")
+st.sidebar.write("**Líder:**")
+st.sidebar.code("lider@dominio.com", language="none")
+st.sidebar.write("**Profesionales autorizados:**")
+st.sidebar.code("ana@centro1.com", language="none")
+st.sidebar.code("david@centro2.org", language="none")
+st.sidebar.code("maria@clinica3.es", language="none")
+st.sidebar.info("Puedes copiar y pegar uno de estos correos en los campos de la app para simular los roles.")
+st.sidebar.write("---")
 
 
 insulina = st.sidebar.number_input("Insulina (uU/mL)", 0.0, 900.0, 30.5,
