@@ -7,7 +7,7 @@ from fpdf import FPDF
 import os
 
 # === CONFIGURACIÓN INICIAL ===
-st.set_page_config(page_title="Predicción de Diabetes")
+st.set_page_config(page_title="Predicción de Diabetes - Versión Límites Clínicos")
 correo_lider = "lider@dominio.com"
 correos_profesionales_autorizados = [
     "ana@centro1.com",
