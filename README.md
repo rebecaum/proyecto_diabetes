@@ -11,7 +11,9 @@ Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de di
 
 - Repositorio en GitHub_ https://github.com/rebecaum/proyecto_diabetes
 
-- Aplicación desplegada en Streamlit: https://proyectodiabetes-f5gzcuzggnykhmrbp2vjja.streamlit.app/
+- Aplicación desplegada en Streamlit: 
+	- App Principal (con límites clínicos) https://proyectodiabetes-f5gzcuzggnykhmrbp2vjja.streamlit.app/
+	. App Alternativa (versión libre sin restricciones) https://proyectodiabetes-ntjxesd3fbklkeg2jpgjcl.streamlit.app/
  
 > ⚠ Nota: Los correos de profesionales y líder deben ser configurados por el administrador. Los que figuran en la app son ejemplos para pruebas.
 
@@ -227,6 +229,7 @@ Este proyecto cuenta con dos versiones funcionales de la app desarrollada en Str
 	- Permite accesos diferenciados para profesionales y líderes.
 
 2. App Alternativa (versión libre sin restricciones)
+- Enlace: App alternativa https://proyectodiabetes-ntjxesd3fbklkeg2jpgjcl.streamlit.app/
 - Archivo: app_libre.py
 - Uso recomendado: pruebas con valores extremos, investigación, análisis de sensibilidad del modelo.
 - Características:
@@ -273,9 +276,4 @@ Las aplicaciones desarrolladas en Streamlit permiten evaluar el riesgo de diabet
 
 Rebeca Urriolabeitia
 
-Profesional de la Salud con la especialidad en geriatría| Experta en gestión de casos complejos y cronicidad|Experta en dirección de centros sociosanitarios | Experiencia en atención centrada en la persona y modelos organizativos innovadores.|
-Actualmente en formación en Ciencia de Datos, con espedial interés en análisis predictivo y aplicación de la IA en salud y bienestar.
-
-
-
-
+Profesional de la Salud con la especialidad en geriatría| Experta en gestión de casos complejos y cronicidad|Experta en dirección de centros sociosanitarios | Experiencia en atención centrada en la persona y modelos organizativos innovadores|Actualmente en formación en Ciencia de Datos, con espedial interés en análisis predictivo y aplicación de la IA en salud y bienestar.
