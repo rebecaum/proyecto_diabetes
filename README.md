@@ -13,7 +13,7 @@ Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de di
 
 - Aplicación desplegada en Streamlit: 
 	- App Principal (con límites clínicos) https://proyectodiabetes-f5gzcuzggnykhmrbp2vjja.streamlit.app/
-	. App Alternativa (versión libre sin restricciones) https://proyectodiabetes-ntjxesd3fbklkeg2jpgjcl.streamlit.app/
+	- App Alternativa (versión libre sin restricciones) https://proyectodiabetes-ntjxesd3fbklkeg2jpgjcl.streamlit.app/
  
 > ⚠ Nota: Los correos de profesionales y líder deben ser configurados por el administrador. Los que figuran en la app son ejemplos para pruebas.
 
