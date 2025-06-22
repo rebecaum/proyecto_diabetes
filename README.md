@@ -5,7 +5,7 @@ Este proyecto de Machine Learning tiene como objetivo **predecir el riesgo de di
 ---
 ## Enlaces del proyecto
 
-- Cuaderno Proyecto de predicción de Diabetes: Cuaderno del proyecto (.ipynb): [Proyecto_Prediccion_de_Diabetes.ipyn`](notebook/Proyecto_Prediccion_de_Diabetes.ipynb)
+- Cuaderno Proyecto de predicción de Diabetes: Cuaderno del proyecto (.ipynb): [Proyecto_Prediccion_de_Diabetes.ipyn](notebook/Proyecto_Prediccion_de_Diabetes.ipynb)
 
 - Versión HTML del cuaderno: [Proyecto_Prediccion_de_Diabetes.html](notebook/Proyecto_Prediccion_de_Diabetes.html)
 
@@ -161,7 +161,8 @@ Se evaluaron tres modelos clínicamente relevantes:
 
 ```bash
 proyecto-diabetes/
-├── app.py    ← App principal en Streamlit
+├── app.py                        ← Versión con límites clínicos ampliados
+├── app_libre.py                  ← Versión sin límites (libre)
 ├── README.md
 ├── requirements.txt
 ├── LICENSE
@@ -211,13 +212,49 @@ proyecto-diabetes/
 	streamlit run app.py
 
 ---
-## App desplegada
+## Aplicaciones web desplegadas
+Este proyecto cuenta con dos versiones funcionales de la app desarrollada en Streamlit:
 
-1. Puedes acceder directamente a la app vía Streamlit Cloud:
-	https://rebecaum-proyecto-diabetes-app.streamlit.app/
+1. App Principal (con límites clínicos)
+- Enlace: App principal https://rebecaum-proyecto-diabetes-app.streamlit.app/
+- Archivo: app.py
+- Uso recomendado: profesionales de la salud, simulaciones clínicas con validación de rangos realistas.
+- Características:
+	- Requiere introducir valores clínicos dentro de rangos controlados.
+	- Genera predicción binaria (riesgo/no riesgo).
+	- Permite guardar resultados en CSV.
+	- Genera informe PDF.
+	- Permite accesos diferenciados para profesionales y líderes.
 
-2. Uso de la aplicación web
-La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes de forma interactiva:
+2. App Alternativa (versión libre sin restricciones)
+- Archivo: app_libre.py
+- Uso recomendado: pruebas con valores extremos, investigación, análisis de sensibilidad del modelo.
+- Características:
+	- Permite ingresar cualquier valor, sin validaciones mínimas o máximas.
+	- Ideal para estudios de casos límite o experimentación.
+	- Guarda resultados en un archivo separado: datos_pacientes_libre.csv.
+
+### Nota importante sobre los roles
+
+Esta aplicación permite simular dos tipos de usuarios:
+
+- **Profesional de la salud**: puede introducir los datos de pacientes y consultar sus propios registros.
+- **Líder clínico**: puede visualizar los datos agregados de todos los profesionales.
+
+Para activar las funcionalidades asociadas a cada rol, es necesario introducir un correo electrónico válido.
+
+**Correos de ejemplo disponibles para pruebas**:
+
+- Profesional: `profesional@dominio.com` 
+	ana@centro1.com
+	david@centro2.org
+	maria@clinica3.es
+- Líder: `lider@dominio.com`
+
+⚠️ Estos correos pueden modificarse directamente en el código (app.py o app_libre.py) para adaptarse a un entorno real.
+---
+### Uso de la aplicación web
+Las aplicaciones desarrolladas en Streamlit permiten evaluar el riesgo de diabetes de forma interactiva:
 	- Accede al enlace público (desplegado en Streamlit Cloud).
 	- Abre la **barra lateral izquierda** haciendo clic en el icono `▸` si no está visible.
 	- Introduce los datos clínicos del paciente (pueden ser anónimos).
@@ -231,29 +268,13 @@ La aplicación desarrollada en Streamlit permite evaluar el riesgo de diabetes d
 
 > El sistema permite un uso clínico orientado a la toma de decisiones y la mejora de comprensión del riesgo de diabetes.
 
-### Nota importante sobre los roles
-
-Esta aplicación permite simular dos tipos de usuarios:
-
-- **Profesional de la salud**: puede introducir los datos de pacientes y consultar sus propios registros.
-- **Líder clínico**: puede visualizar los datos agregados de todos los profesionales.
-
-Para activar las funcionalidades asociadas a cada rol, es necesario introducir un correo electrónico válido.
-
-**Correos de ejemplo disponibles para pruebas**:
-
-- Profesional: `profesional@dominio.com`
-- Líder: `lider@dominio.com`
-
-⚠️ Estos correos pueden modificarse en el archivo `app.py` si deseas adaptarlos a un entorno real.
-
 ---
  Autora
 
 Rebeca Urriolabeitia
 
-Profesional de la Salud con la especialidad en geriatría| Experta en gestión de casos complejos y cronicidad|Experiencia en dirección de centros y diseño de modelos centrados en la persona.|
-Actualmente en formación en Ciencia de Datos, con espedial interés en análisis predictivo aplicado al ámbito clínico y entornos sociosanitario.
+Profesional de la Salud con la especialidad en geriatría| Experta en gestión de casos complejos y cronicidad|Experta en dirección de centros sociosanitarios | Experiencia en atención centrada en la persona y modelos organizativos innovadores.|
+Actualmente en formación en Ciencia de Datos, con espedial interés en análisis predictivo y aplicación de la IA en salud y bienestar.
 
 
 
